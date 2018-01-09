@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="_Projet_WS_REVOIL_REMISE_STEFANIPU" transaction-type="JTA">
+    <jta-data-source>libraryDS</jta-data-source>
+    <class>library.models.entities.Book</class>
+    <class>library.models.entities.Author</class>
+    <class>library.models.entities.LibraryUser</class>
+    <class>library.models.entities.Loan</class>
+    <class>library.models.entities.Category</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
